@@ -93,12 +93,13 @@
                         <outlet property="btUnit1" destination="Rqd-KI-M4F" id="nca-XD-vqz"/>
                         <outlet property="lbResult" destination="iEH-0j-Rsy" id="5Dc-1C-7NR"/>
                         <outlet property="lbResultUnit" destination="QsX-Uo-3qm" id="9mQ-lT-czf"/>
+                        <outlet property="lbUnit" destination="J8S-OB-IYs" id="uB0-4p-bV0"/>
                         <outlet property="tfValue" destination="tEh-MU-rSR" id="s5U-cX-9kd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155.07246376811597" y="22.010869565217394"/>
+            <point key="canvasLocation" x="-330" y="-49"/>
         </scene>
     </scenes>
     <resources>
