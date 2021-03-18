@@ -61,9 +61,10 @@ class ViewController: UIViewController {
         calcCurrency()
       default:
         calcDistance()
-        
       }
-    
+    view.endEditing(true)
+    let result = Double(lbResult.text!)!
+    lbResult.text = String(format: "%.2f", result)
   }
   
   func calcTemperature() {
@@ -79,14 +80,14 @@ class ViewController: UIViewController {
   }
   
   func calcWeight() {
-    guard let peso = Double(tfValue.text!) else {return}
+    guard let weight = Double(tfValue.text!) else {return}
     
     if btUnit1.alpha == 1.0 {
       lbResultUnit.text = "Libra"
-      lbResult.text = String(peso / 1000.0)
+      lbResult.text = String(weight / 2.2046)
     } else {
       lbResultUnit.text = "Kilograma"
-      lbResult.text = String(peso * 1000.0)
+      lbResult.text = String(weight * 2.2046)
     }
   }
   
@@ -95,10 +96,10 @@ class ViewController: UIViewController {
     
     if btUnit1.alpha == 1.0 {
       lbResultUnit.text = "Dólar"
-      lbResult.text = String(currency / 3.50)
+      lbResult.text = String(currency / 3.5)
     } else {
       lbResultUnit.text = "Real"
-      lbResult.text = String(currency * 3.50)
+      lbResult.text = String(currency * 3.5)
     }
   }
   
